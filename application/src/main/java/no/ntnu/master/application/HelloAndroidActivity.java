@@ -33,7 +33,9 @@ public class HelloAndroidActivity extends Activity {
         // Log a message (only on dev platform)
         Log.i(this, "onCreate");
         
-        int foo[] = {1,2,3,4,5};
+        
+        try {
+            int foo[] = {1,2,3,4,5};
         List<String> categories;
         categories = new ArrayList<String>();
         //categories.add("Ha");
@@ -59,10 +61,9 @@ public class HelloAndroidActivity extends Activity {
         //findViewById(RESULT_OK)
         //addView
         chart.series().add(series);
-        try {
             setContentView(chart);
         } catch (Exception e) {
-            Log.i(e.getMessage() + "..." + e.getStackTrace().toString());
+            Log.e("Halloen" + e.getMessage() + "..." + e.getStackTrace().toString());
         }
         
         
