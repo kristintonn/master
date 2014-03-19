@@ -24,6 +24,16 @@
       <groupId>de.akquinet.android.androlog</groupId>
       <artifactId>androlog</artifactId>
     </dependency>
+    <dependency>
+      <groupId>iguana</groupId>
+      <artifactId>common</artifactId>
+      <version>1</version>
+    </dependency>
+    <dependency>
+      <groupId>iguana</groupId>
+      <artifactId>datachart</artifactId>
+      <version>1</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
